@@ -436,13 +436,13 @@ footer i {
         display: block;
         transition: 2s;
     }
-    .dropdown-content a:hover {
+    /* .dropdown-content a:hover {
         background-color: #ddd;
         transition: 2s;
     }
     .dropdown:hover .dropdown-content {
         display: block;
-    }
+    } */
 
     
 /* Media Queries */
@@ -471,6 +471,9 @@ footer i {
     }
     .title_wrapper h1 {
         font-size: 120px!important;
+    }
+    .about-text h1 {
+        font-size: 60px!important;
     }
     .xp-content {
         display: flex;

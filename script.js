@@ -18,3 +18,31 @@ if (history.scrollRestoration) {
       window.scrollTo(0, 0);
   }
 }
+
+// Menu navigation 
+const dropdown = document.querySelector('.dropdown');
+const dropdownContent = document.querySelector('.dropdown-content');
+const links = document.querySelectorAll('.dropdown-content a');
+
+document.addEventListener('pointerdown', hideDropdown);
+dropdown.addEventListener('pointerdown', toggleDropdown);
+
+links.forEach(link => {
+  link.addEventListener('pointerdown', navigateLink);
+});
+
+function hideDropdown(event) {
+  if (!dropdown.contains(event.target)) {
+    dropdownContent.style.display = 'none';
+  }
+}
+
+function toggleDropdown() {
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+}
+
+function navigateLink(event) {
+  event.preventDefault();
+  dropdownContent.style.display = 'none';
+}
+
