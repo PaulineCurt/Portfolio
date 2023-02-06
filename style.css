@@ -1,0 +1,534 @@
+@font-face {
+    font-family: 'Mioge';
+    src: url('./Fonts/Mioge\ Font/mioge.ttf');
+}
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./Fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Light.otf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+header {
+    width: 100%;
+}
+.weather {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#ville {
+    margin-top: 28%;
+}
+.weather-descr {
+    display: flex;
+    align-items: center;
+}
+.back-video {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+nav {
+    display: flex;
+    width: 100%;
+    color: white;
+    font-family: 'Satoshi';
+    align-items: center;
+}
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 1%;
+        height: 85px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    nav a {
+        color: white;
+    }
+    nav a:focus {
+        color: white;
+    }
+
+.top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20%;
+}
+.top-content h1 {
+    font-size: 90px;
+}
+.title {
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    color: white;
+    font-family: 'Mioge';
+    transition: 1s;
+}
+.title:hover {
+    letter-spacing: 10px;
+    transition: 1s;
+}
+.title h1 {
+    font-size: 120px;
+}
+.photo-phone {
+    display: none!important;
+    margin-bottom: 6%;
+}
+
+/* About me */
+.about-photo {
+margin-left: 15%;
+}
+    .photo {
+        width: 140%;
+    }
+.about-me {
+    margin-top: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+    .about-text h1 {
+        font-family: 'Mioge';
+        font-size: 85px;
+    }
+    .about-text p {
+        width: 75%;
+        margin-top: 2%;
+        font-family: 'Satoshi';
+    }
+
+/* skills */
+.container {
+    clip: rect(0, auto, auto, 0);
+    overflow: hidden;
+    height: 60vh;
+    left: 0;
+    width: 100%;
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+    margin-top: 8%;
+}
+    .title_wrapper {
+        position: fixed;
+        display: block;  
+        margin: auto;
+        width: 100%;
+        top: 50%;
+    }
+    .title_wrapper h1 {
+        text-align: center;
+        font-size: 200px;
+        text-align: center;
+        font-family: 'Mioge'; 
+        color: white;
+    }
+    .container_image {
+        background-image: url('./Assets/mountain-skills.jpg');
+        background-size:100vw auto;
+        background-position: 30% 20%;
+        background-attachment: fixed;
+    }
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+}
+    .skills h1 {
+        font-family: 'Mioge';
+        font-size: 93px;
+        margin-bottom: 3%;
+    }
+    .skills h2 {
+        font-size: 30px;
+        font-family: 'Mioge';
+    }
+    .skills ul {
+        font-family: 'Satoshi';
+        list-style: none;
+    }
+    .skills li {
+        display: flex;
+        align-items: center;
+    }
+    .skills-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+.dev.quality{
+    display: flex;
+    flex-direction: column;
+}
+    .dev .quality ul {
+        font-family: 'Satoshi';
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+.list-line {
+    width: 30px;
+    height: 1px;
+    margin-right: 15px;
+    background-color: #c9c9c9;
+}
+
+/* Experiences et Formations */
+.xp {
+    margin-top: 8%;
+    font-family: 'Satoshi';
+    display: flex;
+}
+    .xp h1{
+        font-family: 'Mioge';
+        font-size: 72px;
+        display: flex;
+        margin-bottom: 3%;
+    }
+    .cook {
+        width: 30%;
+    }
+    .xp h2 {
+        font-family: 'Mioge';
+    }
+    .xp h3 {
+        color:#7697C0;
+    }
+    .xp li {
+        display: flex;
+        align-items: center;
+    }
+    .xp-content {
+        display: flex;
+        align-items: center;  
+        justify-content: space-evenly;
+        gap: 8%;
+    }
+.formation {
+    display: flex;
+    font-family: 'Satoshi';
+    margin-left: 8%;
+    margin-top: 8%;
+}
+    .formation-content {
+        display: flex;
+        gap: 8%;
+        align-items: center;
+    }
+    .formation h1 {
+        font-family: 'Mioge';
+        font-size: 72px;
+    }
+    .formation h2 {
+        margin-top: 4%;
+        font-family: 'Mioge';
+    }
+    .formation h3 {
+        color:#7697C0;
+    }
+    .formation li {
+        display: flex;
+        align-items: center;
+    }
+
+
+/* PORTFOLIO */
+
+.portfolio {
+    margin-top: 8%;
+    width: 100%;
+    overflow: hidden;
+}
+    .portfolio h1 {
+        font-family: 'Mioge';
+        font-size: 72px;
+        display: flex;
+        justify-content: center;
+        transition: 1s;
+    }
+    .portfolio h1:hover {
+        letter-spacing: 10px;
+        transition: 1s;
+    }
+    .portfolio h2 {
+        font-family: 'Mioge';
+    }
+    .portfolio p {
+        font-family: 'Satoshi';
+    }
+    .portfolio img {
+        width: 30%;
+    }
+.work-content {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    .work-text {
+        width: 50%;
+    }
+    a {
+        text-decoration: none;
+        color:#7697C0;
+        font-weight: bold;
+    }
+    a:focus {
+        color: #db99de;
+    }
+.all-projects {
+    float: right;
+    margin-right: 8%;
+    margin-top: 3%;
+    text-align: center;
+}
+.all-projects h4 {
+    font-family: 'Mioge';
+}
+
+  /* Contact */
+.container2 {
+    clip: rect(0, auto, auto, 0);
+    overflow: hidden;
+    height: 60vh;
+    left: 0;
+    width: 100%;
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+    margin-top: 8%;
+}
+    .title_wrapper2 {
+        position: fixed;
+        display: block;  
+        margin: auto;
+        width: 100%;
+        top: 50%;
+    }
+    
+    .title_wrapper2 h1 {
+        text-align: center;
+        font-size: 160px;
+        text-align: center;
+        font-family: 'Mioge'; 
+        color: white;
+    }
+    .container_image2 {
+        background-image: url('./Assets/abstrait.jpg');
+        background-size:100vw auto;
+        background-position: 30% 20%;
+        background-attachment: fixed;
+    }
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.contact-content {
+    width: 55%;
+    height: 180px;
+    background-color: white;
+    margin-top: -10%;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px grey;
+}
+.contact-content a {
+    text-decoration: none;
+    color: #7697C0;
+    font-weight: bold;
+    text-align-last: center;
+    font-family: 'Mioge';
+    font-size: 30px;
+}
+#fly {
+    font-size: 40px;
+}
+
+/* Progress bar */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  .progress-container {
+    width: 100%;
+    height: 5px;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #7697C0;
+    width: 0%;
+  }
+  .content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+  }
+
+
+
+/* Footer */
+footer {
+width: 100%;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+footer i {
+    font-size: 35px;
+}
+
+/* Menu navigation fixed */
+  .dropdown {
+    position: fixed;
+    display: inline-block;
+    bottom: 0%;
+  }  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateY(-100%);
+    width: 40px;
+  }
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: 2s;
+    }
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        transition: 2s;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    
+/* Media Queries */
+  @media  screen and (min-width: 320px) and (max-width: 900px){ 
+    header {
+        margin-top: -4%;
+        width: 100%;
+    }
+    header li {
+        display: none;
+    }
+    .nav-bar {
+        place-content: center;
+    }
+    .nav-bar h1 {
+        display: none;
+    }
+    .nav-bar h2 {
+        font-size: 15px;
+    }
+    .back-video {
+        width: 100%;
+    }
+    .top-content h1{
+        font-size: 40px;
+    }
+    .title_wrapper h1 {
+        font-size: 120px!important;
+    }
+    .xp-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .xp {
+        justify-content: center;
+        align-items: center;
+    }
+    .xp-text h1 {
+        font-size: 60px!important;
+    }
+    .formation {
+        width: 84%;
+    }
+    .formation-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .formation h1 {
+        font-size: 60px!important;
+    }
+    .about-me {
+        text-align: -webkit-center;
+        margin: 21;
+    }
+    .skills-content {
+        flex-direction: column;
+        text-align-last: center;
+        gap: 30px;
+    }
+    .about-photo {
+        display: none;
+    }
+    .cook{
+        display: none;
+    }
+    .light {
+        display: none;
+    }
+    .formation {
+        text-align: center;
+    }
+    .photo-phone {
+        display: block!important;
+    }
+    .container {
+        background-size: 200vw auto!important;
+    }
+    .container2 {
+        background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-size: cover;
+    }
+    .container2 h1 {
+        font-size: 60px;
+    }
+}
